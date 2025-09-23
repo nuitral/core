@@ -1,0 +1,32 @@
+{
+  "name": "@nuitral/core",
+  "private": true,
+  "version": "0.0.1-alpha.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "nuitral",
+    "UI",
+    "Core",
+    "Suite"
+  ],
+  "description": "nuitral Core",
+  "author": "Nicola Centonze",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nuitral/core.git"
+  },
+  "homepage": "https://nuitral.github.io",
+  "dependencies": {
+    "lit": "^3.3.1"
+  },
+  "devDependencies": {
+    "typescript": "~5.8.3",
+    "vite": "^7.1.7"
+  }
+}
