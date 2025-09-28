@@ -1,3 +1,1 @@
-import NuitralExample from "./example";
-
-export {NuitralExample}
+export * from './example'
