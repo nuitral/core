@@ -1,34 +1,16 @@
 {
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "target": "ES2022",
-    "experimentalDecorators": true,
-    "useDefineForClassFields": false,
     "module": "ESNext",
-    "lib": [
-      "ES2022",
-      "DOM",
-      "DOM.Iterable"
-    ],
-    "skipLibCheck": true,
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": true,
-    "moduleDetection": "force",
-    "noEmit": true,
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "declaration": true,
+    "emitDeclarationOnly": true,
     "declarationDir": "dist",
-    "outDir": "dist",
-    "esModuleInterop": true,
-    "importHelpers": true
+    "skipLibCheck": true,
+    "strict": true,
+    "allowImportingTsExtensions": false
   },
-  "exclude": ["demo"],
-  "include": ["lib/**/*"]
+  "include": ["lib/**/*"],
+  "exclude": ["demo", "dist"]
 }
-
-

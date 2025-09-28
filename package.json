@@ -1,12 +1,36 @@
 {
   "name": "@nuitral/core",
   "private": true,
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.3",
   "type": "module",
+  "main": "./dist/core.cjs.js",
+  "module": "./dist/core.esm.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/core.esm.js",
+      "require": "./dist/core.cjs.js"
+    },
+    "./example": {
+      "import": "./dist/components/example/index.js",
+      "require": "./dist/components/example/index.cjs",
+      "types": "./dist/components/example/index.d.ts"
+    },
+    "./input": {
+      "import": "./dist/components/input/index.js",
+      "require": "./dist/components/input/index.cjs",
+      "types": "./dist/components/input/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "dev": "vite",
-    "build": "rm -rf dist && rollup -c",
-    "preview": "vite preview"
+    "dev": "vite --config demo/vite.config.ts",
+    "build": "rm -rf dist && rollup -c && tsc -p tsconfig.build.json",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "keywords": [
     "nuitral",
@@ -22,19 +46,30 @@
     "url": "git@github.com:nuitral/core.git"
   },
   "homepage": "https://nuitral.github.io",
+
   "dependencies": {
-    "@nuitral/types": "^0.0.1-alpha.8",
     "@rollup/plugin-commonjs": "^28.0.6",
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^12.1.4",
-    "@types/node": "^24.5.2",
+    "@nuitral/types": "^0.0.1-alpha.8",
     "lit": "^3.3.1"
   },
   "devDependencies": {
+    "@types/node": "^24.5.2",
+    "@typescript-eslint/eslint-plugin": "^8.44.1",
+    "@typescript-eslint/parser": "^8.44.1",
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-prettier": "^5.5.4",
+    "fast-glob": "^3.3.3",
+    "prettier": "^3.6.2",
     "rollup": "^4.52.2",
     "tslib": "^2.8.1",
     "typescript": "~5.8.3",
-    "vite": "^7.1.7"
+    "typescript-eslint": "^8.44.1",
+    "vite": "^7.1.7",
+    "vite-tsconfig-paths": "^5.1.4"
   }
 }
