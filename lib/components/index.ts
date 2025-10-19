@@ -1,2 +1,2 @@
-export * from './example'
 export * from './input'
+export * from './icon'
