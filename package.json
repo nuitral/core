@@ -1,7 +1,9 @@
 {
   "name": "@nuitral/core",
-  "private": true,
-  "version": "0.0.1-alpha.5",
+  "version": "0.0.1-alpha.1",
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "main": "./dist/core.cjs.js",
   "module": "./dist/core.esm.js",
@@ -11,19 +13,22 @@
       "import": "./dist/core.esm.js",
       "require": "./dist/core.cjs.js"
     },
-    "./example": {
-      "import": "./dist/components/example/index.js",
-      "require": "./dist/components/example/index.cjs",
-      "types": "./dist/components/example/index.d.ts"
-    },
     "./input": {
       "import": "./dist/components/input/index.js",
       "require": "./dist/components/input/index.cjs",
       "types": "./dist/components/input/index.d.ts"
+    },
+    "./icon": {
+      "import": "./dist/components/icon/index.js",
+      "require": "./dist/components/icon/index.cjs",
+      "types": "./dist/components/icon/index.d.ts"
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "media",
+    "README.md"
+
   ],
   "scripts": {
     "dev": "vite --config demo/vite.config.ts",

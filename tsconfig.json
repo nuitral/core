@@ -11,6 +11,6 @@
     "strict": true,
     "allowImportingTsExtensions": false
   },
-  "include": ["lib/**/*"],
+  "include": ["lib/**/*", "media/**/*"],
   "exclude": ["demo", "dist"]
 }

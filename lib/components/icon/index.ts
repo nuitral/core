@@ -1,6 +1,6 @@
 import { LitElement, html } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
-import type {NuitralIconsId} from "@nuitral/icons";
+import type { NuitralIconsId } from '@nuitral/icons'
 
 @customElement('nuitral-core-icon')
 export class NuitralIcon extends LitElement {
