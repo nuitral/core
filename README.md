@@ -12,7 +12,7 @@
 
 ---
 
-### ✅ Included Modules & Components (progress status)
+### Progress status
 
 | Status | Module / Component    | Description           |
 |-------|-----------------------|-----------------------|
@@ -21,6 +21,8 @@
 | 🚧 | `nuitral-core-button` | Base Button component |
 | 🕒 | `nuitral-core-tabs`   | Tab List component    |
 | 🕒 | `nuitral-core-tab`    | Base Tab component    |
+| 🕒 | `nuitral-core-card`   | Base Card component   |
+| 🕒 | `nuitral-core-box`    | Base Box component    |
 
 Legend:
 - ✅ = completed
