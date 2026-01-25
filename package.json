@@ -78,7 +78,7 @@
   "homepage": "https://nuitral.github.io",
   "dependencies": {
     "@nuitral/icons": "^0.0.1-alpha.2",
-    "@nuitral/types": "^0.0.1-alpha.8",
+    "@nuitral/types": "^0.0.1-beta.1",
     "@rollup/plugin-commonjs": "^28.0.6",
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@rollup/plugin-terser": "^0.4.4",
