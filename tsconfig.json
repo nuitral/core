@@ -9,7 +9,7 @@
     "declarationDir": "dist",
     "skipLibCheck": true,
     "strict": true,
-    "allowImportingTsExtensions": false
+    "allowImportingTsExtensions": false,
   },
   "include": ["lib/**/*", "media/**/*"],
   "exclude": ["demo", "dist"]

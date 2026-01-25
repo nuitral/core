@@ -6,7 +6,7 @@
   </picture>
 </p>
 
-<p><b>nuitral-core</b> is the foundational library of the <b>nuitral</b> suite and represents the core layer shared across all other libraries that expose UI components. 
+<p><b>nuitral core</b> is the foundational library of the <b>nuitral</b> suite and represents the core layer shared across all other libraries that expose UI components. 
 
 <p><b>Status:</b> This project is currently in <b>alpha version</b>.</p>
 

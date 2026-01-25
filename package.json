@@ -1,6 +1,6 @@
 {
   "name": "@nuitral/core",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.5",
   "publishConfig": {
     "access": "public"
   },
@@ -10,25 +10,50 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/core.esm.js",
-      "require": "./dist/core.cjs.js"
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/core.esm.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/core.cjs.js"
+      }
     },
     "./input": {
-      "import": "./dist/components/input/index.js",
-      "require": "./dist/components/input/index.cjs",
-      "types": "./dist/components/input/index.d.ts"
+      "import": {
+        "types": "./dist/components/input/index.d.ts",
+        "default": "./dist/components/input/index.js"
+      },
+      "require": {
+        "types": "./dist/components/input/index.d.ts",
+        "default": "./dist/components/input/index.cjs"
+      }
     },
     "./icon": {
-      "import": "./dist/components/icon/index.js",
-      "require": "./dist/components/icon/index.cjs",
-      "types": "./dist/components/icon/index.d.ts"
+      "import": {
+        "types": "./dist/components/icon/index.d.ts",
+        "default": "./dist/components/icon/index.js"
+      },
+      "require": {
+        "types": "./dist/components/icon/index.d.ts",
+        "default": "./dist/components/icon/index.cjs"
+      }
+    },
+    "./chip": {
+      "import": {
+        "types": "./dist/components/chip/index.d.ts",
+        "default": "./dist/components/chip/index.js"
+      },
+      "require": {
+        "types": "./dist/components/chip/index.d.ts",
+        "default": "./dist/components/chip/index.cjs"
+      }
     }
   },
   "files": [
     "dist",
     "media",
     "README.md"
-
   ],
   "scripts": {
     "dev": "vite --config demo/vite.config.ts",
