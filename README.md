@@ -43,5 +43,5 @@ Explore the suite → https://nuitral.github.io
 
 This project is licensed under the [MIT License](https://github.com/nuitral/core/blob/main/LICENSE).
 
-Copyright (c) 2025 **Nicola Centonze**
+Copyright (c) 2026 **Nicola Centonze**
 
