@@ -59,8 +59,7 @@
     "dev": "vite --config demo/vite.config.ts",
     "build": "rm -rf dist && rollup -c && tsc -p tsconfig.build.json",
     "preview": "vite preview",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint": "eslint . --fix"
   },
   "keywords": [
     "nuitral",
