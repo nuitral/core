@@ -58,7 +58,7 @@
   "scripts": {
     "dev": "vite --mode dev",
     "demo": "vite --mode demo",
-    "build": "rm -rf dist && rollup -c && tsc -p tsconfig.build.json",
+    "build": "rm -rf dist && rollup -c",
     "preview": "vite preview",
     "lint": "eslint . --fix"
   },

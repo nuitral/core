@@ -5,7 +5,6 @@ import tsconfigPaths from "vite-tsconfig-paths";
 export default defineConfig(({mode}) => {
     const isDev = mode === 'dev';
     const alias = {
-        '@nuitral/icons/dist/nuitral-icons.scss': path.resolve(__dirname, '../icons/dist/nuitral-icons.scss'),
         '@nuitral/types': path.resolve(__dirname, '../types/lib'),
     }
     return {
@@ -21,7 +20,6 @@ export default defineConfig(({mode}) => {
         },
         optimizeDeps: {
             exclude: [
-                '@nuitral/icons',
                 '@nuitral/types',
             ],
         },

@@ -16,15 +16,6 @@
     "allowImportingTsExtensions": false,
     "baseUrl": ".",
     "paths": {
-      "@nuitral/core": [
-        "../core/lib"
-      ],
-      "@nuitral/icons": [
-        "../icons"
-      ],
-      "@nuitral/theming": [
-        "../theming"
-      ],
       "@nuitral/types": [
         "../types/lib"
       ]
