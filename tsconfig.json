@@ -3,14 +3,39 @@
   "compilerOptions": {
     "target": "ES2022",
     "module": "ESNext",
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
     "declaration": true,
     "emitDeclarationOnly": true,
     "declarationDir": "dist",
     "skipLibCheck": true,
     "strict": true,
     "allowImportingTsExtensions": false,
+    "baseUrl": ".",
+    "paths": {
+      "@nuitral/core": [
+        "../core/lib"
+      ],
+      "@nuitral/icons": [
+        "../icons"
+      ],
+      "@nuitral/theming": [
+        "../theming"
+      ],
+      "@nuitral/types": [
+        "../types/lib"
+      ]
+    }
   },
-  "include": ["lib/**/*", "media/**/*"],
-  "exclude": ["demo", "dist"]
+  "include": [
+    "lib/**/*",
+    "media/**/*"
+  ],
+  "exclude": [
+    "demo",
+    "dist"
+  ]
 }

@@ -56,7 +56,8 @@
     "README.md"
   ],
   "scripts": {
-    "dev": "vite --config demo/vite.config.ts",
+    "dev": "vite --mode dev",
+    "demo": "vite --mode demo",
     "build": "rm -rf dist && rollup -c && tsc -p tsconfig.build.json",
     "preview": "vite preview",
     "lint": "eslint . --fix"

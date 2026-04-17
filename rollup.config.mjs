@@ -22,7 +22,7 @@ const coreConfig = {
     plugins: [
         resolve({extensions: ['.js', '.ts']}),
         commonjs(),
-        typescript({tsconfig: './tsconfig.json', declaration: false, declarationDir: null}),
+        typescript({tsconfig: './tsconfig.build.json', declaration: false, declarationDir: null}),
         terser(),
     ],
 }
